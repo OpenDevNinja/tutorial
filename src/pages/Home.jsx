@@ -14,38 +14,54 @@ const Home = () => {
         setIsVideoPlaying(true)
     }
 
+    const questions = [
+        "Votre enfant a-t-il des difficultés scolaires persistantes ?",
+        "Cherchez-vous des méthodes d'apprentissage personnalisées ?",
+        "Voulez-vous améliorer la confiance en soi de votre enfant ?",
+        "Souhaitez-vous un accompagnement professionnel et bienveillant ?",
+        "Désirez-vous voir des résultats concrets rapidement ?",
+        "Avez-vous des questions sur le sujet de l'accompagnement ?",
+       
+    ];
+
     return (
         <>
             <Hero />
 
-            {/* Introduction Section */}
-            <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                        className="text-center"
-                    >
-                        <h2 className="text-3xl font-bold text-slate-800 mb-6">
-                            Services en ligne adaptés à chaque besoin
-                        </h2>
-                        <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10">
-                            Peu importent les défis que vous souhaitez surmonter, nous sommes ici pour vous aider
-                            à chaque étape. Quel que soit le niveau : Préscolaire, Primaire, Secondaire, Adultes.
-                        </p>
-                        <Link
-                            to="/services"
-                            className="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-                        >
-                            Découvrir nos services
-                        </Link>
-                    </motion.div>
-                </div>
-            </section>
-
+          
             <ServicesPreview />
+
+
+               {/* Section Questions */}
+                  <section className="py-20 bg-slate-50">
+                    <div className="max-w-6xl mx-auto px-6">
+                      <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-slate-800 mb-6">
+                          Si vous pouvez répondre OUI à ces questions,
+                        </h2>
+                        <p className="text-xl text-indigo-600 font-semibold">
+                          alors réservez votre séance maintenant !
+                        </p>
+                      </div>
+            
+                      <div className="grid md:grid-cols-2 gap-6 mb-12">
+                        {questions.map((question, index) => (
+                          <div key={index} className="group bg-white p-8 rounded-2xl border-2 border-slate-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300">
+                            <div className="flex items-start">
+                              <div className="bg-emerald-100 p-2 rounded-full mr-4 group-hover:bg-emerald-200 transition-colors duration-300">
+                                <CheckCircle className="w-6 h-6 text-emerald-600" />
+                              </div>
+                              <p className="text-slate-700 font-medium text-lg leading-relaxed">{question}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+            
+                      
+                    </div>
+                  </section>
+            
+
 
             {/* Section "Comment travailler avec nous" */}
             <section className="py-16 bg-slate-50">
