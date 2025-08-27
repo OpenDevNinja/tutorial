@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react'
 
 const Footer = () => {
     return (
@@ -15,18 +15,17 @@ const Footer = () => {
                             scolaires en réussites exceptionnelles.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
+                            <a href="https://www.facebook.com/carinecplumeroyale" target='_blank' className="text-slate-400 hover:text-indigo-400 transition-colors">
                                 <Facebook className="h-6 w-6" />
                             </a>
-                            <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
-                                <Twitter className="h-6 w-6" />
+                            {/* for youtube */}
+                            <a href="https://youtube.com/@ccplumeroyale3258?si=-9XfNLSeM0ScjJRX" target='_blank' className="text-slate-400 hover:text-indigo-400 transition-colors">
+                                <Youtube className="h-6 w-6" />
                             </a>
                             <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
                                 <Instagram className="h-6 w-6" />
                             </a>
-                            <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
-                                <Linkedin className="h-6 w-6" />
-                            </a>
+                           
                         </div>
                     </div>
 
@@ -48,7 +47,7 @@ const Footer = () => {
                         <div className="space-y-3">
                             <div className="flex items-center">
                                 <Phone className="h-5 w-5 text-indigo-400 mr-3" />
-                                <span className="text-slate-300">+33 1 23 45 67 89</span>
+                                <span className="text-slate-300">+1 844 955 3998</span>
                             </div>
                             <div className="flex items-center">
                                 <Mail className="h-5 w-5 text-indigo-400 mr-3" />
@@ -56,7 +55,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center">
                                 <MapPin className="h-5 w-5 text-indigo-400 mr-3" />
-                                <span className="text-slate-300">Paris, France</span>
+                                <span className="text-slate-300">4297 Beaubien, Quebec, Canada</span>
                             </div>
                         </div>
                     </div>

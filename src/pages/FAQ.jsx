@@ -24,7 +24,7 @@ const FAQ = () => {
                 {
                     id: 'gen-1',
                     question: "Qui peut bénéficier de vos services de tutorat ?",
-                    answer: "Nos services s'adressent à tous les niveaux : préscolaire, primaire, secondaire et adultes. Que ce soit pour du soutien scolaire, de la remise à niveau ou de l'aide aux devoirs, nous adaptons notre approche à chaque apprenant."
+                    answer: "Nos services s'adressent aux élèves du primaire et aux adultes. Que ce soit pour du soutien scolaire, de la remise à niveau ou de l'aide aux devoirs, nous adaptons notre approche à chaque apprenant."
                 },
                 {
                     id: 'gen-2',
@@ -46,18 +46,18 @@ const FAQ = () => {
                 {
                     id: 'course-1',
                     question: "Quelles matières proposez-vous ?",
-                    answer: "Nous couvrons l'ensemble des matières principales : mathématiques, français, physique-chimie, SVT, histoire-géographie, langues vivantes (anglais, espagnol, allemand), ainsi que de l'aide aux devoirs toutes matières confondues."
+                    answer: "Nous couvrons l'ensemble des matières principales : lecture, écriture et mathématiques, ainsi que de l'aide aux devoirs toutes matières confondues."
                 },
                 {
                     id: 'course-2',
                     question: "Comment sont sélectionnés vos formateurs ?",
                     answer: "Nos formateurs sont rigoureusement sélectionnés sur leur expertise académique, leur expérience pédagogique et leurs qualités humaines. Tous sont diplômés et passent par un processus de recrutement exigeant."
                 },
-                {
-                    id: 'course-3',
-                    question: "Proposez-vous une préparation aux examens ?",
-                    answer: "Oui, nous proposons des préparations spécifiques pour le brevet, le baccalauréat, ainsi que pour divers concours. Ces préparations incluent des entraînements aux épreuves, des revisions ciblées et des techniques de gestion du stress."
-                }
+                // {
+                //     id: 'course-3',
+                //     question: "Proposez-vous une préparation aux examens ?",
+                //     answer: "Oui, nous proposons des préparations spécifiques pour le brevet, le baccalauréat, ainsi que pour divers concours. Ces préparations incluent des entraînements aux épreuves, des revisions ciblées et des techniques de gestion du stress."
+                // }
             ]
         },
         {
@@ -68,12 +68,12 @@ const FAQ = () => {
                 {
                     id: 'sched-1',
                     question: "Quels sont vos horaires d'ouverture ?",
-                    answer: "Nous sommes disponibles du lundi au samedi, de 8h à 20h. Les cours peuvent avoir lieu en semaine, le week-end, et même en soirée selon les disponibilités des formateurs."
+                    answer: "Nous sommes disponibles du lundi au vendredi, de 17h à 20h et samedi, de 9h à 20h. Les cours peuvent avoir lieu en semaine, le week-end, et même en soirée selon les disponibilités des formateurs."
                 },
                 {
                     id: 'sched-2',
                     question: "Comment fonctionne la réservation de séances ?",
-                    answer: "Vous pouvez réserver vos séances via notre plateforme en ligne, par téléphone ou par email. Nous vous recommandons de réserver à l'avance pour garantir la disponibilité aux créaux horaires qui vous conviennent."
+                    answer: "Vous pouvez réserver vos séances via notre plateforme en ligne, par téléphone ou par email. Nous vous recommandons de réserver à l'avance pour garantir la disponibilité des crénaux horaire qui vous conviennent."
                 },
                 {
                     id: 'sched-3',
@@ -95,7 +95,7 @@ const FAQ = () => {
                 {
                     id: 'pay-2',
                     question: "Quels modes de paiement acceptez-vous ?",
-                    answer: "Nous acceptons les paiements par carte bancaire, virement, chèque, ainsi que les CESU (Chèque Emploi Service Universel) qui permettent de bénéficier d'avantages fiscaux."
+                    answer: "Nous acceptons les paiements par virement Interac."
                 },
                 {
                     id: 'pay-3',

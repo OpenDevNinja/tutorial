@@ -107,7 +107,7 @@ const Home = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-800 mb-1">3. Séances régulières</h3>
-                                        <p className="text-slate-600">Nous organisons des séances aux horaires qui vous conviennent, en présentiel ou en ligne.</p>
+                                        <p className="text-slate-600">Nous organisons des séances aux horaires qui vous conviennent en ligne.</p>
                                     </div>
                                 </div>
 
@@ -175,6 +175,11 @@ const Home = () => {
                                 </div>
                                 <div className="flex items-center">
                                     <div className="w-3 h-3 bg-indigo-600 rounded-full mr-3"></div>
+                                    <span className="text-slate-700">Techniques adaptées au style d'apprentissage et au rythme de l'enfant</span>
+                                </div>
+
+                                <div className="flex items-center">
+                                    <div className="w-3 h-3 bg-indigo-600 rounded-full mr-3"></div>
                                     <span className="text-slate-700">Matériel pédagogique adapté à chaque niveau</span>
                                 </div>
                                 <div className="flex items-center">
@@ -187,15 +192,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-8">
-                                <Link
-                                    to="/about"
-                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold"
-                                >
-                                    En savoir plus sur notre méthode
-                                    <ArrowRight className="w-5 h-5 ml-2" />
-                                </Link>
-                            </div>
+                            
                         </div>
 
                         <div className="relative">

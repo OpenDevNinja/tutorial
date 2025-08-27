@@ -95,8 +95,8 @@ const About = () => {
                         <h2 className="text-3xl font-bold text-slate-800 mb-6 text-center">Notre mission</h2>
                         <p className="text-lg text-slate-600 text-center max-w-4xl mx-auto">
                             Offrir un accompagnement éducatif personnalisé de qualité qui permet à chaque élève,
-                            quel que soit son niveau, de surmonter ses difficultés, de reprendre confiance en lui
-                            et d'atteindre l'excellence académique.
+                            quelque soit son niveau, de surmonter ses difficultés, de reprendre confiance en lui
+                            et d'atteindre la réussite scolaire.
                         </p>
                     </motion.div>
                 </div>

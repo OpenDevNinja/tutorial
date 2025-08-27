@@ -40,8 +40,9 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed"
                     >
-                        Un accompagnement personnalisé et professionnel pour tous les niveaux :
-                        Préscolaire, Primaire, Secondaire et Adultes
+                        Un accompagnement personnalisé et professionnel pour les élèves
+                        du primaire et les adultes.
+                        
                     </motion.p>
 
                     <motion.div

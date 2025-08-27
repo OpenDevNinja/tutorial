@@ -58,7 +58,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-800">Email</h3>
-                                        <p className="text-slate-600">contact@tutorat-excellence.fr</p>
+                                        <p className="text-slate-600">contact@tutoratopsucces.com</p>
                                     </div>
                                 </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-800">Téléphone</h3>
-                                        <p className="text-slate-600">+33 1 23 45 67 89</p>
+                                        <p className="text-slate-600">+1 844 955 3998</p>
                                     </div>
                                 </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-800">Adresse</h3>
-                                        <p className="text-slate-600">123 Avenue de l'Éducation, 75000 Paris</p>
+                                        <p className="text-slate-600">4297 Beaubien, Quebec, Canada</p>
                                     </div>
                                 </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-800">Horaires</h3>
-                                        <p className="text-slate-600">Lun-Ven: 8h-20h | Sam: 9h-18h</p>
+                                        <p className="text-slate-600">Lun-Ven: 17h-20h | Sam: 9h-20h</p>
                                     </div>
                                 </div>
                             </div>
