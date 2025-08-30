@@ -9,14 +9,14 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            name: "Marie Dubois",
+            name: "Emmanuela",
             role: "Mère de Léa (15 ans)",
-            content: "Grâce à Carine, ma fille a retrouvé confiance en elle. Ses notes sont passées de 8/20 à 16/20 en mathématiques en seulement 3 mois !",
+            content: "",
             rating: 5,
-            image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+            image: "",
             location: "Paris 15ème",
             isVideo: true,
-            videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            videoUrl: "https://www.youtube.com/embed/dE06e1J_4wY?si=0_v9RAPNOMJxpBna" 
         },
         {
             id: 2,
@@ -30,18 +30,18 @@ const Testimonials = () => {
         },
         {
             id: 3,
-            name: "Sophie Leroy",
+            name: "Manpla",
             role: "Mère de jumeaux (9 ans)",
             content: "Carine a su s'adapter aux besoins spécifiques de mes jumeaux. L'un avait besoin de soutien en français, l'autre en mathématiques. Résultats spectaculaires pour les deux !",
             rating: 5,
             image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1476&q=80",
             location: "Versailles",
             isVideo: true,
-            videoUrl: "https://www.youtube.com/embed/9bZkp7q19f0"
+            videoUrl: "https://www.youtube.com/embed/mz1Ml-Z0xLM?si=X5dAsEDCv4KkWHx8"
         },
         {
             id: 4,
-            name: "Pierre Moreau",
+            name: "Donald Moreau",
             role: "Père d'Emma (16 ans)",
             content: "Le bac de français approchait et Emma stressait énormément. Grâce aux séances de préparation intensives, elle a obtenu 17/20 à l'oral. Un immense merci !",
             rating: 5,
@@ -51,7 +51,7 @@ const Testimonials = () => {
         },
         {
             id: 5,
-            name: "Céline Petit",
+            name: "Careine Smith",
             role: "Mère de Lucas (14 ans)",
             content: "Lucas avait complètement décroché après le confinement. Carine a su le remotiver et lui redonner le goût d'apprendre. Ses professeurs ont noté une nette amélioration.",
             rating: 5,
@@ -124,9 +124,7 @@ const Testimonials = () => {
                                             <Play className="w-8 h-8 text-indigo-600" />
                                         </div>
                                     </div>
-                                    <div className="absolute bottom-4 left-4 text-white font-semibold">
-                                        Voir le témoignage
-                                    </div>
+                                 
                                 </div>
 
                                 <div className="p-6">
@@ -136,20 +134,8 @@ const Testimonials = () => {
                                         ))}
                                     </div>
 
-                                    <p className="text-slate-600 mb-4 italic">"{testimonial.content}"</p>
-
-                                    <div className="flex items-center">
-                                        <img
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                            className="w-12 h-12 rounded-full object-cover mr-3"
-                                        />
-                                        <div>
-                                            <p className="font-semibold text-slate-800">{testimonial.name}</p>
-                                            <p className="text-sm text-slate-600">{testimonial.role}</p>
-                                            <p className="text-xs text-slate-500">{testimonial.location}</p>
-                                        </div>
-                                    </div>
+                                 
+                                    
                                 </div>
                             </motion.div>
                         ))}
@@ -189,15 +175,10 @@ const Testimonials = () => {
                                 <p className="text-slate-600 mb-6 italic">"{testimonial.content}"</p>
 
                                 <div className="flex items-center">
-                                    <img
-                                        src={testimonial.image}
-                                        alt={testimonial.name}
-                                        className="w-12 h-12 rounded-full object-cover mr-3"
-                                    />
+                                   
                                     <div>
                                         <p className="font-semibold text-slate-800">{testimonial.name}</p>
-                                        <p className="text-sm text-slate-600">{testimonial.role}</p>
-                                        <p className="text-xs text-slate-500">{testimonial.location}</p>
+                                       
                                     </div>
                                 </div>
                             </motion.div>

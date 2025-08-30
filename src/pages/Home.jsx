@@ -6,7 +6,10 @@ import Hero from '../components/Sections/Hero'
 import ServicesPreview from '../components/Sections/ServicesPreview'
 import Testimonials from './Testimonials'
 import BlogPreview from '../components/Sections/BlogPreview'
-
+import heroImg from '../assets/im1.png'
+import ServicesSection from '../components/Sections/ServiceSession'
+import NiveauxSection from '../components/Sections/NiveauxSection'
+import QuestionsSection from '../components/Sections/QuestionsSection'
 const Home = () => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
@@ -29,37 +32,7 @@ const Home = () => {
             <Hero />
 
           
-            <ServicesPreview />
-
-
-               {/* Section Questions */}
-                  <section className="py-20 bg-slate-50">
-                    <div className="max-w-6xl mx-auto px-6">
-                      <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                          Si vous pouvez répondre OUI à ces questions,
-                        </h2>
-                        <p className="text-xl text-indigo-600 font-semibold">
-                          alors réservez votre séance maintenant !
-                        </p>
-                      </div>
-            
-                      <div className="grid md:grid-cols-2 gap-6 mb-12">
-                        {questions.map((question, index) => (
-                          <div key={index} className="group bg-white p-8 rounded-2xl border-2 border-slate-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300">
-                            <div className="flex items-start">
-                              <div className="bg-emerald-100 p-2 rounded-full mr-4 group-hover:bg-emerald-200 transition-colors duration-300">
-                                <CheckCircle className="w-6 h-6 text-emerald-600" />
-                              </div>
-                              <p className="text-slate-700 font-medium text-lg leading-relaxed">{question}</p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-            
-                      
-                    </div>
-                  </section>
+            <NiveauxSection />
             
 
 
@@ -141,7 +114,7 @@ const Home = () => {
                                 viewport={{ once: true }}
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    src={heroImg}
                                     alt="Comment travailler avec nous"
                                     className="w-full h-[500px] object-cover rounded-2xl shadow-lg"
                                 />
@@ -150,6 +123,9 @@ const Home = () => {
                     </motion.div>
                 </div>
             </section>
+
+            <ServicesSection />
+            <QuestionsSection />
 
             {/* Section Vidéo */}
             <section className="py-16 bg-white">
@@ -236,7 +212,7 @@ const Home = () => {
             </section>
 
             <Testimonials />
-            <BlogPreview />
+            {/* <BlogPreview /> */}
 
             {/* CTA Section */}
             <section className="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
